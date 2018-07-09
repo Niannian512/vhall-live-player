@@ -996,7 +996,7 @@ WxVideo.prototype._switchSrc = function () {
 
     if (THIS.randomSwitchSrcCount >= 2) {  // 轮训超过2次 切到same
       if (THIS.currentClearStatus != 'same') {
-        THIS.updateLivePlayerSrc(THIS.switchQualityLevel('same'));  // 方法体内已经调用了 switchsrc
+        THIS.switchQualityLevel('same');  // 方法体内已经调用了 switchsrc
       }
     } else {
       THIS.updateLivePlayerSrc(THIS.switchSrc());
@@ -1011,7 +1011,7 @@ WxVideo.prototype._switchSrc = function () {
 
         if (THIS.randomSwitchSrcCount >= 2) {  // 轮训超过2次 切到same
           if (THIS.currentClearStatus != 'same') {
-            THIS.updateLivePlayerSrc(THIS.switchQualityLevel('same'));
+            THIS.switchQualityLevel('same');
           }
         } else {
           THIS.updateLivePlayerSrc(THIS.switchSrc());  // 更换
