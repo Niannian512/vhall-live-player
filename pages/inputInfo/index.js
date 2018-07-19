@@ -1,24 +1,24 @@
 const key = 'vhall_options';
 Page({
   /* 测试直播信息 */
-  data:{
-      roomid: 833103009,
-      account: '1',
-      username: '1',
-      appkey: '6df499bfa2a5fef0b4b1cc39bf16e145',
-      signedat: '1527786061',
-      sign: 'caf4aefdf8d8f0841b67fda83d8283d9',
-      email: '1@1.com'
-  },
-  // data: {
-  //   roomid: '',
-  //   account: '',
-  //   username: '',
-  //   appkey: '',
-  //   signedat: '',
-  //   sign: '',
-  //   email: ''
+  // data:{
+  //     roomid: 833103009,
+  //     account: '1',
+  //     username: '1',
+  //     appkey: '6df499bfa2a5fef0b4b1cc39bf16e145',
+  //     signedat: '1527786061',
+  //     sign: 'caf4aefdf8d8f0841b67fda83d8283d9',
+  //     email: '1@1.com'
   // },
+  data: {
+    roomid: '881752380',
+    account: 'test001',
+    username: 'lisi',
+    appkey: 'abb389afd505b40eaab3a50ec4ec8694',
+    signedat: '1531881008000',
+    sign: '11a5d4fd6e019a0c479c63c41fa10596',
+    email: 'test001@vhall.com'
+  },
   onReady() {
     wx.setNavigationBarTitle({
       title: '录入播放信息'

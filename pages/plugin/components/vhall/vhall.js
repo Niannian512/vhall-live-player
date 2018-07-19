@@ -281,6 +281,7 @@ Component({
             playing:true,
             showLoading:false
           });
+          wx.hideLoading();
           this.player.play();
         },
         bindPause: function () {
