@@ -6,7 +6,7 @@ function login(options) {
     roomid: options.roomid,
     account: options.account,
     username: options.username,
-    app_key: options.appkey,
+    app_key: options.app_key,
     signedat: options.signedat,
     sign: options.sign
   };

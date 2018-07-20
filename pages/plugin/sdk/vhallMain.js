@@ -14,7 +14,7 @@ function init(option) {
     });
     return console.error("请先阅读文档传入正确参数");
   }
-  if (!option.roomid || !option.appkey || !option.signedat || !option.sign || !option.username) {
+  if (!option.roomid || !option.app_key || !option.signedat || !option.sign || !option.username) {
     Event.trigger('error',{
         code: '20001',
         msg: Error['20001']
@@ -26,7 +26,7 @@ function init(option) {
     email: option.email,
     roomid: option.roomid,
     username: option.username,
-    appkey: option.appkey,
+    app_key: option.app_key,
     signedat: option.signedat,
     sign: option.sign
   };

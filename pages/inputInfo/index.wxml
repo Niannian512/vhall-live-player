@@ -17,8 +17,8 @@
       <input value='{{email}}' placeholder="电子邮箱" bindinput="inputEmail" />
     </view>
     <view class='v-input'>
-      <text>appkey</text>
-      <input value='{{appkey}}' placeholder="appkey" bindinput="inputAppkey" />
+      <text>app_key</text>
+      <input value='{{app_key}}' placeholder="app_key" bindinput="inputAppkey" />
     </view>
     <view class='v-input'>
       <text>sign</text>

@@ -18,7 +18,7 @@ Page({
       roomid: '',
       account: '',
       username: '',
-      appkey: '',
+      app_key: '',
       signedat: '',
       sign: '',
       email: ''

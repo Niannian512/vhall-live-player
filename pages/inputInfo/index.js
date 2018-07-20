@@ -14,7 +14,7 @@ Page({
     roomid: '881752380',
     account: 'test001',
     username: 'lisi',
-    appkey: 'abb389afd505b40eaab3a50ec4ec8694',
+    app_key: 'abb389afd505b40eaab3a50ec4ec8694',
     signedat: '1531881008000',
     sign: '11a5d4fd6e019a0c479c63c41fa10596',
     email: 'test001@vhall.com'
@@ -41,7 +41,7 @@ Page({
   },
   inputAppkey(e) {
     this.setData({
-      appkey: e.detail.value
+      app_key: e.detail.value
     });
   },
   inputEmail(e) {
@@ -88,9 +88,9 @@ Page({
         duration: 1000
       });
       return false;
-    } else if (!this.data.appkey) {
+    } else if (!this.data.app_key) {
       wx.showToast({
-        title: 'appkey没有填写',
+        title: 'app_key没有填写',
         icon: 'none',
         duration: 1000
       });
@@ -118,7 +118,7 @@ Page({
       key: key,
       data: this.data
     });
-    let url = '../index/index?roomid=' + this.data.roomid + '&account=' + this.data.account + '&username=' + this.data.username + '&email=' + this.data.email + '&appkey=' + this.data.appkey + '&sign=' + this.data.sign + '&signedat=' + this.data.signedat;
+    let url = '../index/index?roomid=' + this.data.roomid + '&account=' + this.data.account + '&username=' + this.data.username + '&email=' + this.data.email + '&app_key=' + this.data.app_key + '&sign=' + this.data.sign + '&signedat=' + this.data.signedat;
     //console.log(url);
     wx.navigateTo({
       url: url

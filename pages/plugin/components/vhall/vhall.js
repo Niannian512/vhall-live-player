@@ -103,7 +103,7 @@ Component({
               }else{
                 this.triggerEvent("errorMsg", {
                   code: '20004',
-                  msg: Error['20004']
+                  msg: res.data.msg
                 });
               }
               return;
