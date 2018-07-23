@@ -188,6 +188,8 @@ Component({
               _id = this.data.videoId;
               if (mobilePlayer.lines[0].srv) {
                 uri = mobilePlayer.lines[0].srv;
+                var uristr = uri.split('.');
+                playerType = uristr[uristr.length-1].toLocaleLowerCase()=='mp4'?"":playerType;
               } else {
                 uri = mobilePlayer.lines[0].srv_audio;
                 playerType = "";

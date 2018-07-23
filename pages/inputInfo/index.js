@@ -11,12 +11,12 @@ Page({
   //     email: '1@1.com'
   // },
   data: {
-    roomid: '667916472',
+    roomid: '241633651',
     account: 'test001',
     username: 'lisi',
     app_key: 'abb389afd505b40eaab3a50ec4ec8694',
-    signedat: '1532311156000',
-    sign: 'ee3cd6864df6b15cc1c1ee0011b8eb2f',
+    signedat: '1532318268000',
+    sign: 'eb1601986732d1972721980fcfdaab26',
     email: 'test001@vhall.com'
   },
   onReady() {
