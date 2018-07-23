@@ -28,6 +28,9 @@ Component({
         fullScreen: false,
         backShow:false
     },
+    properties: {
+        autoPlay: Boolean
+    },
     attached: function(){
       VhallMain.on('finishDoc', (docMsg) => {
         this.setInitDocOption = docMsg.success;
@@ -213,29 +216,20 @@ Component({
                   bu: 1
                 }
             }, this);
-            let st1 = setTimeout(()=> {
-              clearTimeout(st1);
-              this.bindPlay();
-              // 保持屏幕常亮
-              wx.setKeepScreenOn({
-                  keepScreenOn: true
-              });
-            }, 500);
-            // let st2 = setTimeout(() => {
-            //   clearTimeout(st2);
-            //   this.setData({
-            //     currentQuality: this.player.currentClearStatus,
-            //     currentLineIndex: this.player.subSrcIndex
-            //   });  
-            //   this.triggerEvent("playSource", {
-            //     sourceInfo: {
-            //       lineTypes: ['线路1', '线路2'],
-            //       qualiTypes: this.player.choiceClearStatus
-            //     },
-            //     currentQuality: this.player.currentClearStatus,
-            //     currentLineIndex: this.player.subSrcIndex
-            //   });
-            // }, 5000);
+            if(this.data.autoPlay){
+                let st1 = setTimeout(()=> {
+                   clearTimeout(st1);
+                   this.bindPlay();
+                  // 保持屏幕常亮
+                   wx.setKeepScreenOn({
+                      keepScreenOn: true
+                   });
+                }, 500);
+            }
+            this.triggerEvent("errorMsg", {
+                code: '30000',
+                msg: Error['30000']
+            });
         },
         onCmdMessage: function(msg){
           let playSource = this.data.playSource;

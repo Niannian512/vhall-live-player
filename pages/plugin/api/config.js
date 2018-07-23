@@ -40,6 +40,8 @@ const ErrorCode ={
     "20003": "接口请求失败",
     "20004": "活动不存在",
 
+    "30000": "准备就绪",
+
     "40000": "视频或者音频解析错误:开发工具不支持播放格式，请使用微信扫一扫!",
     "40001": "直播中不能seek",
     "40002": "视频等待缓冲中...",
@@ -54,7 +56,7 @@ module.exports = {
    EVENTE: V_EVENTE,
    Error:ErrorCode,
    timeOut:time,
-   vhall: 'https://e.vhall.com/', /* 接口地址 */
+   vhall: 'https://t.e.vhall.com/', /* 接口地址 */
    pushLogUrl: 'https://la.e.vhall.com/login', /* 日志上报地址 */
    videoDefault: 'https://cnstatic01.e.vhall.com/static/img/v35-webinar.png', /* 播放占位图片 */
    noloading: 'https://cnstatic01.e.vhall.com/static/img/mobile/doc_noloading.png' /* 文档占位图片 */

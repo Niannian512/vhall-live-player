@@ -1,5 +1,6 @@
 <view>
     <vhall
+        autoPlay="{{true}}"
         bind:playSource="getPlaySource"
         bind:fullScreenChange="screenChange"
         bind:playWaiting="waiting"
