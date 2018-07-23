@@ -860,7 +860,7 @@ WxVideo.prototype.fetchSrc = function (json) {
             THIS.viewUrl = data.hls_domainnames;
             var _rs = initHandleSrc(THIS.viewUrl, 'hls_domainname', token, _defaultJson.qualityStr)
           } else {
-            THIS.viewUrl = data.hls_domainnames;
+            THIS.viewUrl = data.mp4_domainnames;
             var _rs = initHandleSrc(THIS.viewUrl, 'mp4_domainname', token, _defaultJson.qualityStr)
           }
         }

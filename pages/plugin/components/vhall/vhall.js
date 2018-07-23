@@ -153,7 +153,7 @@ Component({
                   this.docArry = DocHelp.formartDocs(docsData.data);
                 });
               }else{
-                console.error('无法获取到文档绘制信息'); 
+                console.log('没有文档信息'); 
               }
             }
             this.initLivePlayer(options,res.data.data);
@@ -190,6 +190,7 @@ Component({
                 uri = mobilePlayer.lines[0].srv;
               } else {
                 uri = mobilePlayer.lines[0].srv_audio;
+                playerType = "";
               }
               uri = uri.replace(/(.+\.com)/, '');
             }
