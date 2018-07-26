@@ -56,7 +56,7 @@ module.exports = {
    EVENTE: V_EVENTE,
    Error:ErrorCode,
    timeOut:time,
-   vhall: 'https://t.e.vhall.com/', /* 接口地址 */
+   vhall: 'https://e.vhall.com/', /* 接口地址 */
    pushLogUrl: 'https://la.e.vhall.com/login', /* 日志上报地址 */
    videoDefault: 'https://cnstatic01.e.vhall.com/static/img/v35-webinar.png', /* 播放占位图片 */
    noloading: 'https://cnstatic01.e.vhall.com/static/img/mobile/doc_noloading.png' /* 文档占位图片 */
