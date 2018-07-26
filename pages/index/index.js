@@ -20,8 +20,7 @@ Page({
       username: '',
       app_key: '',
       signedat: '',
-      sign: '',
-      email: ''
+      sign: ''
     },
     selectType: 'other',
     videoUrl:'',

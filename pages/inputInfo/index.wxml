@@ -13,10 +13,6 @@
       <input value='{{username}}' placeholder="用户名" bindinput="inputUserName" />
     </view>
     <view class='v-input'>
-      <text>email</text>
-      <input value='{{email}}' placeholder="电子邮箱" bindinput="inputEmail" />
-    </view>
-    <view class='v-input'>
       <text>app_key</text>
       <input value='{{app_key}}' placeholder="app_key" bindinput="inputAppkey" />
     </view>
@@ -28,37 +24,6 @@
       <text>signedat</text>
       <input value='{{signedat}}'  placeholder="签名时间" bindinput="inputSignedat" />
     </view>
-  </view>  
-  <!-- 测试直播信息 -->
-   <!-- <view class='input-box'>
-    <view class='v-input'>
-      <text>roomid</text>
-      <input value='821744190' placeholder="房间id" bindinput="inputRoom" />
-    </view>
-    <view class='v-input'>
-      <text>account</text>
-      <input value='test001' placeholder="账号" bindinput="inputAccount" />
-    </view>
-    <view class='v-input'>
-      <text>username</text>
-      <input value='lisi' placeholder="用户名" bindinput="inputUserName" />
-    </view>
-    <view class='v-input'>
-      <text>email</text>
-      <input value='test001@vhall.com' placeholder="电子邮箱" bindinput="inputEmail" />
-    </view>
-    <view class='v-input'>
-      <text>appkey</text>
-      <input value='abb389afd505b40eaab3a50ec4ec8694' placeholder="appkey" bindinput="inputAppkey" />
-    </view>
-    <view class='v-input'>
-      <text>sign</text>
-      <input value='8fd67ab016da554eb40b135db6c7c506' placeholder="签名" bindinput="inputSign" />
-    </view>
-    <view class='v-input'>
-      <text>signedat</text>
-      <input value='1523355088000'  placeholder="签名时间" bindinput="inputSignedat" />
-    </view> 
-  </view>   -->
+  </view>
   <button class='join-btn' type='primary' bindtap='joinLive'>观看</button>
 </view>

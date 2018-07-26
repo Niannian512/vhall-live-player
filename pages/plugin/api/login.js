@@ -10,10 +10,11 @@ function login(options) {
     signedat: options.signedat,
     sign: options.sign
   };
-  if (options.email) {
-    _pars.email = options.email;
-  }
-  return Http.reqGet("api/jssdk/v1/webinar/init", _pars);
+  // if (options.email) {
+  //   _pars.email = options.email;
+  // }
+  // return Http.reqGet("api/jssdk/v1/webinar/init", _pars);
+    return Http.reqGet("api/miniprogram/v1/webinar/init", _pars);
 }
 
 function getDocs(url) {

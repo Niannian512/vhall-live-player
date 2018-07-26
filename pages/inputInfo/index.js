@@ -1,23 +1,13 @@
 const key = 'vhall_options';
 Page({
   /* 测试直播信息 */
-  // data:{
-  //     roomid: 833103009,
-  //     account: '1',
-  //     username: '1',
-  //     appkey: '6df499bfa2a5fef0b4b1cc39bf16e145',
-  //     signedat: '1527786061',
-  //     sign: 'caf4aefdf8d8f0841b67fda83d8283d9',
-  //     email: '1@1.com'
-  // },
   data: {
-    roomid: '241633651',
+    roomid: '881752380',
     account: 'test001',
     username: 'lisi',
     app_key: 'abb389afd505b40eaab3a50ec4ec8694',
-    signedat: '1532318268000',
-    sign: 'eb1601986732d1972721980fcfdaab26',
-    email: 'test001@vhall.com'
+    signedat: '1532413317000',
+    sign: 'd8f37d3d5ff61431dca71cf9cf1a3329'
   },
   onReady() {
     wx.setNavigationBarTitle({
@@ -81,13 +71,6 @@ Page({
         duration: 1000
       });
       return false;
-    } else if (!this.data.email) {
-      wx.showToast({
-        title: 'email没有填写',
-        icon: 'none',
-        duration: 1000
-      });
-      return false;
     } else if (!this.data.app_key) {
       wx.showToast({
         title: 'app_key没有填写',
@@ -118,7 +101,7 @@ Page({
       key: key,
       data: this.data
     });
-    let url = '../index/index?roomid=' + this.data.roomid + '&account=' + this.data.account + '&username=' + this.data.username + '&email=' + this.data.email + '&app_key=' + this.data.app_key + '&sign=' + this.data.sign + '&signedat=' + this.data.signedat;
+    let url = '../index/index?roomid=' + this.data.roomid + '&account=' + this.data.account + '&username=' + this.data.username + '&app_key=' + this.data.app_key + '&sign=' + this.data.sign + '&signedat=' + this.data.signedat;
     //console.log(url);
     wx.navigateTo({
       url: url
