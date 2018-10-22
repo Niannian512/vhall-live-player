@@ -2,12 +2,12 @@ const key = 'vhall_options';
 Page({
   /* 测试直播信息 */
   data: {
-    roomid: '881752380',
+    roomid: '740082998',
     account: 'test001',
     username: 'lisi',
     app_key: 'abb389afd505b40eaab3a50ec4ec8694',
-    signedat: '1532413317000',
-    sign: 'd8f37d3d5ff61431dca71cf9cf1a3329'
+    signedat: '1533022794000',
+    sign: 'fd40f0994b98d7dabf2e6b65670a37eb'
   },
   onReady() {
     wx.setNavigationBarTitle({
