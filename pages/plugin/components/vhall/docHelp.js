@@ -1,6 +1,7 @@
 import Event from '../../sdk/event.js';
 
 function sendDocMsg(arry,time) {
+  time = parseInt(time)
   for(let i=0;i<arry.length;i++){
     let item = arry[i];
     if (time == item.updataTime) {
